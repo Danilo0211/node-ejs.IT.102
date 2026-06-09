@@ -1,11 +1,11 @@
 {
-  "name": "node-server-codespace",
+  "name": "node-ejs-kickstart",
   "version": "1.0.0",
-  "description": "A starting point for Node based projects in GitHub codespaces",
-  "main": "server.js",
+  "description": "A starting point for Node/EJS based projects in GitHub codespaces",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "NAME HERE",
   "license": "Apache 2.0",
