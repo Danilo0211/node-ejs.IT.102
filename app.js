@@ -56,6 +56,19 @@ app.get('/users', (req, res) => {
     });
 });
 
+// ==========================================
+// 🔍 NEW ROUTE: Individual Profile (The View)
+// ==========================================
+app.get('/users/view/:id', (req, res) => {
+    let id = req.params.id;
+    
+    // We cheat elegantly by subtracting 1 to match array zero-indexing
+    res.render('users/view', {
+        title: 'User Profile',
+        user: userData[--id] 
+    });
+});
+
 
 
 //Set server to listen for requests
