@@ -46,6 +46,17 @@ app.get('/caral',(req,res)=>{
     res.render('pages/caral',{'title': title});
 });
 
+// ==========================================
+// 👥 NEW ROUTE: The User Directory (The List)
+// ==========================================
+app.get('/users', (req, res) => {
+    res.render('users/index', {
+        title: 'Users',
+        users: userData // Passes the 100-user array to the template
+    });
+});
+
+
 
 //Set server to listen for requests
 app.listen(port, () => {
